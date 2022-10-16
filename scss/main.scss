@@ -35,7 +35,6 @@ img {
     width: 70px;
     height: 70px;
     color: #fff;
-    text-transform: uppercase;
 }
 
 #csharp-logo {
@@ -60,7 +59,6 @@ img {
     a {
         text-decoration: none;
         color: #fff;
-        text-transform: uppercase;
         border-bottom: 3px transparent solid;
         padding-bottom: 0.5rem;
         transition: border-color 0.5s;
@@ -74,7 +72,6 @@ img {
         }
     }
 }
-
 
 // Header
 #header {
@@ -96,9 +93,11 @@ img {
         }
     }
 
-    // &-inner {
-
-    // }
+    &-inner {
+        background: $bg-image no-repeat center center/cover;
+        height: 5.5rem;
+        border-bottom: 3px solid $main-color;
+    }
 }
 
 // Home Sections
@@ -117,59 +116,81 @@ img {
         }
     }
 
-    &-b {
-        .goals {
+      // Home Section B
+  &-b {
+    .goal {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.5rem;
+      text-align: center;
+
+      // goal-number
+      &-number {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 22px;
+        background: $main-color;
+        color: set-text-color($main-color);
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        text-align: center;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s;
+      }
+
+      // goal-icon
+      &-icon {
+        border-radius: 50%;
+        background: $dark-color;
+        color: set-text-color($dark-color);
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+          background: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+
+          .goal-number {
+            background: $dark-color;
+            color: set-text-color($dark-color);
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// About Section
+#about {
+    &-a {
+        .about-info {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 1.5rem;
-            text-align: center;
-
-            // goals-number
-            &-number {
-                position: absolute;
-                top: 0;
-                right: 0;
-                font-size: 18px;
-                background: $main-color;
-                color: set-text-color($main-color);
-                border-radius: 50%;
-                height: 15px;
-                width: 15px;
-                line-height: 15px;
-                padding: 1rem;
-                transition: all 2s;
-            }
-
-            // goals-icon
-            &-icon {
-                border-radius: 50%;
-                background: $dark-color;
-                color: set-text-color($dark-color);
-                padding: 2rem;
-                width: 70px;
-                height: 70px;
-                line-height: 70px;
-                text-align: center;
-                position: relative;
-                transition: all 2s;
-            }
-
-            &:hover {
-                background: $main-color;
-                width: 90px;
-                height: 90px;
-                line-height: 90px;
-                transition: all 1s;
-
-                .goals-number {
-                    background: $dark-color;
-                    color: set-text-color($dark-color);
-                    transition: all 1s;
-                }
-            }
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.2rem;
+        }
+        .bio-image {
+            max-width: 400px;
+        }
+    
+        .bio {
+            border-left: 3px solid $main-color;
+            padding: 0.8rem;
         }
 
+
     }
+
 }
 
 // Footer
