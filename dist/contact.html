@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>About Me | Developer & BIM Specialist</title>
+    <title>Contact Me | Developer & BIM Specialist</title>
 </head>
 <body>
     <!-- Header -->
@@ -20,54 +20,56 @@
                 <a href="index.html"><h1>BIM-S.it</h1></a>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html" class="current">ABOUT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="contact.html" class="current">CONTACT</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
-    <!-- Section A: Info -->
-    <section id="about-a" class="text-center py-3">
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="text-center py-3">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">Contact Me</h2>
             <div class="bottom-line"></div>
-            <p class="lead">Let me tell you a little about myself and what I do</p>
-            <div class="about-info">
-                <img src="img/about.jpg" alt="Me" class="bio-image">
-                <div class="bio bg-light">
-                    <h4>.Net Developer and BIM Specialist</h4>
-                    <p>I graduated from university in 2009 with 5-years Master's degree in Mechanical Engineering.
-                        After a few years in construction, I started to automate some processes and I continued to dive into programming.<br>
-                        I constantly try to follow the latest trends in software design and .NET in particular.<br>
-                        I like both frontend and backend development.<br>
-                        I feel comfortable working with following frontend technologies: HTML5 and CSS3.<br>
-                        Backend technologies: C#, WPF, LINQ, Entity Framework and SQL databases.
-                        Based in Treviso, Italy 
-                    </p>
+            <p class="lead">Here is how you can reach me</p>
+            <form>
+                <div class="text-fields">
+                    <input type="text" class="text-input name-input" placeholder="Name">
+                    <input type="text" class="text-input subject-input" placeholder="Subject">
+                    <input type="email" class="text-input email-input" placeholder="Email Address">
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number">
+                    <textarea type="text" class="text-input message-input" placeholder="Enter Message"></textarea>
+                </div>
+                <button type="submit" class="btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section B: Contact Info -->
+    <section id="contact-b" class="py-3 bg-dark">
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h3>Email</h3>
+                    <p>sk@bim-s.it</p>
+                </div>
+                <div>
+                    <i class="fas fa-address-card fa-2x"></i>
+                    <h3>Address</h3>
+                    <p>Treviso - Italy</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section B: Skills -->
-    <section id="about-b" class="bg-dark py-3">
+    <!-- Section C: Tagline -->
+    <section id="contact-c" class="bg-main py-4">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="bottom-line"></div>
-            <h4>.NET</h4>
-            <p class="my-1-bottom">C#, WPF with MVVM design pattern, LINQ and Entity Framework</p>
-            <h4>HTML & CSS</h4>
-            <p class="my-1-bottom">Creating of web-sites using HTML5 and CSS3</p>
-            <h4>SQL Databases</h4>
-            <p class="my-1-bottom">MySQL, PostgreSQL and MSSQL</p>
-            <h4>Revit API</h4>
-            <p class="my-1-bottom">Creating plugins for Autodesk Revit</p>
-            <h4>Rest API</h4>
-            <p class="my-1-bottom">Web requests with REST API</p>
-            <h4>GIT Versioning</h4>
-            <p class="my-1-bottom">Using of GIT</p>
+            <h1>Let's Start Your Next Project</h1>
         </div>
     </section>
 

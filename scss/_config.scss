@@ -14,3 +14,12 @@ $bg-image: url('../img/showcase.jpg');
         @return #fff;
     }
 }
+
+// Set Header Height
+@function set-header-height($max-width) {
+    @if(($max-width) > 500px) {
+        @return 5.5rem;
+    } @else {
+        @return 10rem;
+    }
+} 
