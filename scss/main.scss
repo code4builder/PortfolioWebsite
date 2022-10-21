@@ -34,14 +34,14 @@ img {
 
 // Logo
 #logo {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     color: #fff;
 }
 
 #csharp-logo {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 //Main Nav
@@ -112,9 +112,13 @@ img {
     &-a {
         .specials {
             margin-top: 3rem;
-            display: grid;
-            grid-gap: 1rem;
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .specials-items {
+                margin: 0 2rem;
+            }
 
             .fas {
                 color: $main-color;
@@ -126,9 +130,8 @@ img {
       // Home Section B
   &-b {
     .goal {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 1.5rem;
+      display: flex;
+      align-items: center;
       text-align: center;
 
       // goal-number
@@ -173,6 +176,10 @@ img {
           }
         }
       }
+
+      p {
+        margin: 0 2rem;
+      }
     }
   }
 }
@@ -181,9 +188,9 @@ img {
 #about {
     &-a {
         .about-info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1.2rem;
+            display: flex;
+            justify-items: center;
+            justify-content: center;
         }
         .bio-image {
             max-width: 300px;
@@ -201,48 +208,65 @@ img {
     }
 }
 
+// Projects
+#project-a {
+    .social-projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-projects a {
+        margin: 1rem;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
 // Contact Page
 #contact {
     &-a {
-        .text-fields {
-            display: grid;
-            grid-template-areas: 
-                'name email'
-                'subject phone'
-                'message message';
-            grid-gap: 1.2rem;
-            margin-bottom: 1.2rem;
+            .text-fields {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                input {
+                    margin: 0.5rem;
+                    max-width: 350px;
+                    width: 350px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                textarea {
+                    width: 350px;
+                    height: 200px;
+                    margin-top: 0.5rem;
+                }
+            }
+            button[type='submit'] {
+                width: 350px;
+                max-width: 350px;
+                align-self: center;
+                margin: 1rem 0;
+                justify-self: center;
+            }
+    
+}
 
-            // Grid Areas
-            .name-input {
-                grid-area: name;
-            }
-            .subject-input {
-                grid-area: subject;
-            }
-            .email-input {
-                grid-area: email;
-            }
-            .phone-input {
-                grid-area: phone;
-            }
-            .message-input {
-                grid-area: message;
-                height: 100px;
-            }
 
-            .text-input {
-                padding: 0.5rem 1rem;
-            }
-        }
-        button[type='submit'] {width: 50%;}
-    }
 
     &-b {
         .contact-info {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            
+            .contact-item {
+                margin: 0.5rem 2rem;
+            }
         }
     }
 
@@ -252,16 +276,37 @@ img {
     }
 }
 
+
+// Project Sliders: carousel-indicators
+.carousel-control-next, 
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel .carousel-indicators li {background-color:#8f8c8c}
+.carousel .carousel-indicators li.active {background-color: $main-color}
+
+.image-center {
+    margin: auto;
+    width: 50%;
+}
+
+.img-w600px {
+    max-width: 600px;
+    align-items: center;
+}
+
+
 // Footer
 #main-footer {
     background-color: $dark-color;
     color: #fff;
-    height: 7rem;
+    height: 9rem;
 
     .footer-content {
         display: flex;
         justify-content: space-between;
-        height: 5rem;
+        height: 7rem;
         align-items: center;
 
         .social .fab {
@@ -280,6 +325,33 @@ img {
             }
         }
 
+        .social-projects .fab {
+            margin-right: 1rem;
+            height: 30px;
+            width: 30px;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
 
+            &:hover {
+                background: $main-color;
+            }
+        }
+
+        .social-projects-footer .fab {
+            margin-right: 1rem;
+            border: 2px #fff solid;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            line-height: 20px;
+            text-align: center;
+            padding: 0.5rem;
+            color: #fff;
+
+            &:hover {
+                background: $main-color;
+            }
+        }
     }
 }

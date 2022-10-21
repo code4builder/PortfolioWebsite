@@ -67,8 +67,17 @@ input[class^='btn-']:hover {
     margin-bottom: 2rem;
 }
 
+.lead-description {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
 
 // Padding
@@ -122,3 +131,10 @@ input[class^='btn-']:hover {
     display: block;
     margin: 1rem auto 1.6rem auto;
 }
+
+// For Tooltip
+.visible {
+    height: 3em;
+    width: 3em;
+    margin: 1rem;
+  }
