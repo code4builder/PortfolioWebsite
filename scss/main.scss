@@ -87,6 +87,10 @@ img {
         .header-content {
             text-align: center;
             padding-top: 20%;
+
+            #type-effect-container {
+                margin-bottom: 2rem;
+            }
         }
 
         h1 {
@@ -193,7 +197,7 @@ img {
             justify-content: center;
         }
         .bio-image {
-            max-width: 300px;
+            max-width: 340px;
         }
     
         .bio {
@@ -255,8 +259,6 @@ img {
     
 }
 
-
-
     &-b {
         .contact-info {
             display: flex;
@@ -276,7 +278,6 @@ img {
     }
 }
 
-
 // Project Sliders: carousel-indicators
 .carousel-control-next, 
 .carousel-control-prev {
@@ -295,7 +296,6 @@ img {
     max-width: 600px;
     align-items: center;
 }
-
 
 // Footer
 #main-footer {

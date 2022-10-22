@@ -35,27 +35,16 @@
             <h2 class="section-title">Contact Me</h2>
             <div class="bottom-line"></div>
             <p class="lead">Here is how you can reach me</p>
-            <form method="post" name="contact_form"
-                action="contact-form-handler.php">
-                Your Name:
-                 <input type="text" name="name">
 
-                Email Address:
-                <input type="text" name="email">
-
-                Message:
-                <textarea name="message"></textarea>
-
-                <input type="submit" value="Submit">
-            </form>	
-            <!-- <div class="text-fields">
-                <input type="text" class="text-input name-input" placeholder="Name">
-                <input type="text" class="text-input subject-input" placeholder="Subject">
-                <input type="email" class="text-input email-input" placeholder="Email Address">
-                <input type="text" class="text-input phone-input" placeholder="Phone Number">
-                <textarea type="text" class="text-input message-input" placeholder="Enter Message"></textarea>
-                <button type="submit" class="btn-dark">Submit</button>
-            </div> -->
+            <form action="contact-form-handler.php" method="POST">
+                <div class="text-fields">
+                    <input type="text" id="name" name="name" class="text-input name-input" placeholder="Name">
+                    <input type="email" id="email" name="email" class="text-input email-input" placeholder="Email Address">
+                    <input type="text" id="subject" name="subject" class="text-input subject-input" placeholder="Subject">
+                    <textarea type="text" name="message" class="text-input message-input" placeholder="Enter Message"></textarea>
+                    <button type="submit" class="btn-dark">Submit</button>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -105,13 +94,5 @@
             </div>
         </div>
     </footer>
-
-    <script language="JavaScript">
-        var frmvalidator  = new Validator("contactform");
-        frmvalidator.addValidation("name","req","Please provide your name");
-        frmvalidator.addValidation("email","req","Please provide your email");
-        frmvalidator.addValidation("email","email",
-          "Please enter a valid email address");
-        </script>
 </body>
 </html>

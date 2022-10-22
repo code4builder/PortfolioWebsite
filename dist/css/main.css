@@ -200,8 +200,6 @@ input[class^='btn-']:hover {
     align-items: center; }
     #main-nav li {
       padding: 1rem; }
-  h1 {
-    display: none; }
   #home-a .specials {
     flex-direction: column; }
     #home-a .specials .fas {
@@ -217,7 +215,7 @@ input[class^='btn-']:hover {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
     .items .item {
       max-height: 190px;
-      margin-bottom: 1rem; }
+      margin-bottom: 1.5rem; }
   .video {
     width: 350px;
     height: 196px; }
@@ -293,6 +291,8 @@ img {
   #header-home .header-content {
     text-align: center;
     padding-top: 20%; }
+    #header-home .header-content #type-effect-container {
+      margin-bottom: 2rem; }
   #header-home h1 {
     font-size: 3rem;
     line-height: 1.2; }
@@ -362,7 +362,7 @@ img {
   justify-content: center; }
 
 #about-a .bio-image {
-  max-width: 300px; }
+  max-width: 340px; }
 
 #about-a .bio {
   border-left: 3px solid #ffbc00;
