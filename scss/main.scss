@@ -54,6 +54,20 @@ img {
         display: flex;
     }
 
+    select {
+        height: 25px;
+        margin: 1.0rem 0;
+        background: transparent;
+        color: #fff;
+        font-family: 'Dosis', sans-serif;
+        font-size: 16px;
+        option {
+            background: #fff;
+            color: black;
+            font-family: 'Dosis', sans-serif;
+        }
+    }
+
     li {
         padding: 1rem 1.5rem;
     }
@@ -72,6 +86,11 @@ img {
         &.current {
             border-color: $main-color;
         }
+    }
+
+    .lng-logo {
+        height: 25px;
+        width: 25px;
     }
 }
 

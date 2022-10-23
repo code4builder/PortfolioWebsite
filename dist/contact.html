@@ -20,9 +20,13 @@
                 <a href="index.html"><h1>BIM-S.it</h1></a>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="contact.html" class="current">CONTACT</a></li>
+                    <li><a href="about.html" class="lng-header-about">ABOUT</a></li>
+                    <li><a href="projects.html" class="lng-header-projects">PROJECTS</a></li>
+                    <li><a href="contact.html" class="current lng-header-contact">CONTACT</a></li>
+                    <select name="language" id="language">
+                        <option value="en">English</option>
+                        <option value="it">Italian</option>
+                    </select>
                 </ul>
             </nav>
 
@@ -32,9 +36,9 @@
     <!-- Section A: Contact Form-->
     <section id="contact-a" class="text-center py-3">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title lng-contact-a-header-lead">Contact Me</h2>
             <div class="bottom-line"></div>
-            <p class="lead">Here is how you can reach me</p>
+            <p class="lead lng-contact-a-header">Here is how you can reach me</p>
 
             <form action="contact-form-handler.php" method="POST">
                 <div class="text-fields">
@@ -42,7 +46,7 @@
                     <input type="email" id="email" name="email" class="text-input email-input" placeholder="Email Address">
                     <input type="text" id="subject" name="subject" class="text-input subject-input" placeholder="Subject">
                     <textarea type="text" name="message" class="text-input message-input" placeholder="Enter Message"></textarea>
-                    <button type="submit" class="btn-dark">Submit</button>
+                    <button type="submit" class="btn-dark lng-contact-a-btn-submit">Submit</button>
                 </div>
             </form>
         </div>
@@ -59,7 +63,7 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-address-card fa-2x"></i>
-                    <h3>Address</h3>
+                    <h3 class="lng-contact-b-item-2-header">Address</h3>
                     <p>Treviso - Italy</p>
                 </div>
             </div>
@@ -69,14 +73,14 @@
     <!-- Section C: Tagline -->
     <section id="contact-c" class="bg-main py-4">
         <div class="container">
-            <h1>Let's Start Your Next Project</h1>
+            <h1 class="lng-contact-c-header">Let's Start Your Next Project</h1>
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="main-footer">
         <div class="footer-content container">
-            <p>Developed by Sergey Kuleshov, 2022</p>
+            <p class="lng-footer-developed-by">Developed by Sergey Kuleshov, 2022</p>
             <div class="social">
                 <a href="https://www.linkedin.com/in/sergey-kuleshov-47345163/" target="_blank">
                     <i class="fab fa-linkedin"></i>                    
@@ -94,5 +98,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Multilanguage -->
+    <script src="js/lang.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
