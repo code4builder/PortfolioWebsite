@@ -200,6 +200,8 @@ input[class^='btn-']:hover {
     align-items: center; }
     #main-nav li {
       padding: 1rem; }
+    #main-nav h1 {
+      display: none; }
   #home-a .specials {
     flex-direction: column; }
     #home-a .specials .fas {
@@ -271,6 +273,17 @@ img {
   padding-top: 1rem; }
   #main-nav ul {
     display: flex; }
+  #main-nav select {
+    height: 25px;
+    margin: 1.0rem 0;
+    background: transparent;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px; }
+    #main-nav select option {
+      background: #fff;
+      color: black;
+      font-family: 'Dosis', sans-serif; }
   #main-nav li {
     padding: 1rem 1.5rem; }
   #main-nav a {
@@ -283,6 +296,9 @@ img {
       border-color: #ccc; }
     #main-nav a.current {
       border-color: #ffbc00; }
+  #main-nav .lng-logo {
+    height: 25px;
+    width: 25px; }
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
