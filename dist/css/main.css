@@ -299,6 +299,8 @@ img {
   #main-nav .lng-logo {
     height: 25px;
     width: 25px; }
+  #main-nav select, #main-nav #lang {
+    display: none; }
 
 #header-home {
   background: url("../img/showcase.jpg") no-repeat center right/cover;
