@@ -35,7 +35,7 @@
     <!-- Section A: Carousel Slider -->
     <section id="project-a" class="text-center py-3">
         <div class="container">
-            <h2 class="section-title">Task Manager Application</h2>
+            <h2 class="section-title">Benon Services - Project Management Application</h2>
             <div class="bottom-line"></div>
         </div>
         <div class="container">
@@ -47,21 +47,13 @@
                         <ol class="carousel-indicators">
                             <li class="active" data-target="#slider1" data-slide-to="0"></li>
                             <li data-target="#slider1" data-slide-to="1"></li>
-                            <li data-target="#slider1" data-slide-to="2"></li>
-                            <li data-target="#slider1" data-slide-to="3"></li>
                         </ol>
                             <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block img-fluid" src="../img/items/task_manager/screenshot_desk.jpg" alt="First Slide">
+                                <img class="d-block img-fluid" src="../img/items/benonservices/benonservicesScreenshot1.jpeg" alt="First Slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="../img/items/task_manager/screenshot_projects.jpg" alt="Second Slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block img-fluid" src="../img/items/task_manager/screenshot_tasks.jpg" alt="Third Slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block img-fluid" src="../img/items/task_manager/screenshot_users.jpg" alt="Fourth Slide">
+                                <img class="d-block img-fluid" src="../img/items/benonservices/benonservicesScreenshot2.jpeg" alt="Second Slide">
                             </div>
                         </div>
             
@@ -78,39 +70,27 @@
             </div>
         </div>
 
-        <div class="social-projects">
-            <div title="GitHub" class="visible">
-                <a href="https://github.com/code4builder/SKWPFTaskManager" target="_blank">
-                    <i class="fab fa-github fa-3x"></i>                    
-                </a>
-            </div>
-            <div title="YouTube Tutorial" class="visible">
-                <a href="https://www.youtube.com/embed/CIL6y2fJRn0" target="_blank">
-                    <i class="fab fa-youtube fa-3x"></i>
-                </a>
-            </div>
-        </div>
-
         <!-- Section B: Description -->
         <div class="container">
             <h3>Description of application</h3>
             <h4 class="text-left">Introduction</h4>
             <p class="lead-description text-left">
-                The Task Manager is a simple, and easy-to-use collaboration tool that enables you to organize 
+                The Benon Services is a simple, and easy-to-use collaboration tool that enables you to organize 
                 projects and everything related to them into boards and tasks. <br>
-                With Task Manager you can find all kinds of information, such as:<br>
+                With this Project Manager you can find all kinds of information, such as:<br>
                  - What’s being worked on?<br>
                  - Who’s working on what?<br>
                  - What progress the project is making<br>
             </p>
             <h4 class="text-left">Technologies</h4>
             <p class="lead-description text-left">
-                The Task Manager is a <b>Client-Server application</b> developed in Visual Studio 2022.<br>
-                Based on .NET 6.0.<br>
-                The application is developed using <b>MVVM architectural pattern</b> that is represented by three distinct components, the Model, View and ViewModel.<br>
-                MVVM architecture puts a heavy emphasis on the Separation of Concerns for each of these layers. Separating the layers benefits us as:<br>
-                - Modularity: Each layer's internal implementation can be changed or swapped without affecting the others.<br>
-                - Increased testability: Each layer can be Unit Tested with fake data, which is not possible if the ViewModel's code is written in the Code-Behind of the View.<br>
+                The Benon Services Manager is a <b>Web Client-Server application</b> developed in Visual Studio 2022.<br>
+                Based on .NET 8.0 and <b>ASP.NET</b>.<br>
+                The application is based on <b>Microservices architectural approach</b> that is represented by different APIs.<br>
+                Main Characteristics of <b>Microservices</b>:<br>
+                - <b>Decentralization:</b> Microservices promote the decentralization of application components, allowing teams to independently develop, deploy, and maintain services. This decentralization enhances autonomy, enabling teams to choose the most suitable technology stack and development practices for their specific service.<br>
+                - <b>Interoperability:</b> Microservices communicate with each other through well-defined APIs, promoting interoperability. This modular communication approach allows services to be developed using different programming languages and technologies while ensuring seamless integration within the overall system.<br>
+                - <b>Resilience and Fault Tolerance:</b> Microservices are designed to be resilient. Even if one service experiences a failure, the overall system continues to function. Implementing features such as redundancy, load balancing, and automated error recovery mechanisms enhances the fault tolerance of microservices architectures.<br>
             </p>
             <h4 class="text-left">Backend</h4>
             <p class="lead-description text-left">
@@ -120,21 +100,15 @@
                 application via URL-encoded parameters are formatted as either JSON to transmit the data.<br>
                 For authentication and authorization is used <b>JWT (Json WEb Tokens)</b> Bearer library.<br>
                 For serialization/deserialization of Json format is used <b>Newtonsoft.Json library</b><br>
+                For sending emails is used Azure Service Bus</b><br>
             </p>
             <h4 class="text-left">Frontend</h4>
             <p class="lead-description text-left">
-                For user interface was used <b>WPF (Windows Presentation Foundation)</b> with Material Design libraries for better style.<br>
+                For user interface was used <b>external template</b><br>
+                Also used <b>ajax</b> and <b>Javascript</b><br>
             </p>
         </div>
 
-        <!-- Section C: You-Tube Video -->
-        <div>
-            <iframe class="video" width="560" height="315" 
-            src="https://www.youtube.com/embed/CIL6y2fJRn0" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-        </div>
     </section>
 
     <!-- Footer -->
